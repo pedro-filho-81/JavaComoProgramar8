@@ -41,7 +41,7 @@ public class Aritimetica2_15 {
         System.out.printf( "Diminuir: %d - %d = %d\n", num1, num2, diminuir );
         System.out.printf( "Multiplicar %d * %d = %d\n", num1, num2, multiplicar );
         System.out.printf( "Dividir: %d / %d = %d\n", num1, num2, dividir );
-        //System.out.printf( "Resto: %d % %d = %d\n\n", num1, num2, resto );
+        System.out.printf( "Resto: %d %% %d = %d\n\n", num1, num2, resto );
         
     } // fim main    
 } // fim classe
