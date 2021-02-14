@@ -1,4 +1,4 @@
-package circunferencia;
+
 /*
 	Questão: 2.28 (Diâmetro, circunferência e área de um círculo) Eis uma prévia 
 	do que veremos mais adiante. Neste capítulo, você aprendeu sobre  inteiros e 
@@ -23,26 +23,32 @@ package circunferencia;
 	Autor: @Pedro Filho, 12/02/2021
 */
 
-//import java.util.Scanner;
+// biblioteca
+import java.util.Scanner;
 
-	public class Circunferencia {
+// cria uma classe
+public class Circunferencia2_28 {
 
-		public static void main(String[] args) {
-			
-			// objeto
-			Scanner input = new Scanner( System.in );
+	// método principal
+	public static void main(String[] args) {
 
-			// variável
-			int raio = 0;
+		// cria objeto
+		Scanner input = new Scanner( System.in );
 
+		// variáveis
+		float raio = 0;
+		float diametro = 0;
+		float circunfere = 0;
+		float area = 0;
 
-			// cabeçalho
-			System.out.print( "\tCIRCULO" );
+		// entrada de dados
+		System.out.print( "Informe o valor do raio: " );
+		raio = input.nextFloat();
 
-			System.out.print( "Digite o tamanho do raio: " );
-			raio = input.nextInt();
+		// mostrar resultado
+		System.out.printf( "Diâmetro = %.2f\n", 2 * raio );
+		System.out.printf( "Circunferência = %.2f\n", 2 * raio * Math.PI );
+		System.out.printf( "Area = %.2f\n", ( raio * raio ) * Math.PI );
 
-			
-		}
-	}
-	 
+	} // fim main
+} // fim classe
